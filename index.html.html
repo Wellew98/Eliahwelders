@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELIAH Professional Welders - Modern Steel Furniture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Define custom colors based on the logo */
+        :root {
+            --brand-orange: #f97316; /* A vibrant orange */
+            --brand-charcoal: #1f2937; /* A deep charcoal */
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--brand-charcoal);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .bg-brand-charcoal { background-color: var(--brand-charcoal); }
+        .text-brand-orange { color: var(--brand-orange); }
+        .bg-brand-orange { background-color: var(--brand-orange); }
+        .border-brand-orange { border-color: var(--brand-orange); }
+
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Styling for the product gallery */
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.5rem;
+        }
+        .gallery-item img {
+            transition: transform 0.4s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .gallery-item .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+            padding: 2rem 1rem 1rem;
+            opacity: 1;
+            transition: opacity 0.4s ease;
+        }
+        .gallery-item .overlay-title {
+            color: white;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header id="home" class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo - Made larger as requested -->
+            <a href="#home">
+                <img src="https://i.imgur.com/I5mPPj9.png" alt="ELIAH Professional Welders Logo" class="h-16 md:h-20 w-auto">
+            </a>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#work" class="text-gray-600 hover:text-brand-orange transition-colors font-medium">Our Work</a>
+                <a href="#about" class="text-gray-600 hover:text-brand-orange transition-colors font-medium">About</a>
+                <a href="#contact" class="bg-brand-orange text-white py-2 px-6 rounded-full hover:opacity-90 transition-opacity font-semibold">Contact</a>
+            </div>
+             <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="#work" class="block py-3 px-6 text-gray-700 hover:bg-gray-100">Our Work</a>
+            <a href="#about" class="block py-3 px-6 text-gray-700 hover:bg-gray-100">About</a>
+            <a href="#contact" class="block py-3 px-6 text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[60vh] md:h-[80vh] bg-cover bg-center text-white flex items-center" style="background-image: url('https://i.imgur.com/YjyDCpb.jpg');">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            <div class="container mx-auto px-6 text-center z-10">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight">ELIAH Professional Welders</h1>
+                <p class="mt-4 text-lg md:text-2xl font-light">Supplier and Manufacturer of Modern Steel Furniture and Appliances</p>
+            </div>
+        </section>
+
+        <!-- Our Work Section -->
+        <section id="work" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-brand-charcoal mb-12">Our Work</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product: Body Mirror -->
+                    <div class="gallery-item shadow-lg"><img src="https://i.imgur.com/hdrkZTy.jpg" alt="Full Body Mirror" class="w-full h-full object-cover"><div class="overlay"><h3 class="overlay-title">Full Body Mirror</h3></div></div>
+                    <!-- Product: Book Shelf -->
+                    <div class="gallery-item shadow-lg"><img src="https://i.imgur.com/KEcYpgB.jpg" alt="Book Shelf" class="w-full h-full object-cover"><div class="overlay"><h3 class="overlay-title">Book Shelf</h3></div></div>
+                    <!-- Product: Unit Cabinet -->
+                    <div class="gallery-item shadow-lg"><img src="https://i.imgur.com/PqRO523.jpg" alt="Unit Cabinet" class="w-full h-full object-cover"><div class="overlay"><h3 class="overlay-title">Unit Cabinet</h3></div></div>
+                    <!-- Product: Tall Stool -->
+                    <div class="gallery-item shadow-lg"><img src="https://i.imgur.com/lhbiC10.jpg" alt="Tall Stool" class="w-full h-full object-cover"><div class="overlay"><h3 class="overlay-title">Tall Stool</h3></div></div>
+                    <!-- Product: Table -->
+                    <div class="gallery-item shadow-lg"><img src="https://i.imgur.com/WIMhIDr.jpg" alt="Table" class="w-full h-full object-cover"><div class="overlay"><h3 class="overlay-title">Table</h3></div></div>
+                    <!-- Product: Flower Buckets -->
+                    <div class="gallery-item shadow-lg"><img src="https://i.imgur.com/avODxBX.jpg" alt="Flower Buckets" class="w-full h-full object-cover"><div class="overlay"><h3 class="overlay-title">Flower Buckets</h3></div></div>
+                    <!-- Product: Coffee Table -->
+                    <div class="gallery-item shadow-lg"><img src="https://i.imgur.com/ie0c6FG.jpg" alt="Coffee Table" class="w-full h-full object-cover"><div class="overlay"><h3 class="overlay-title">Coffee Table</h3></div></div>
+                    <!-- Product: Small Mirror -->
+                    <div class="gallery-item shadow-lg"><img src="https://i.imgur.com/s83z8q3.jpg" alt="Small Bathroom Mirror" class="w-full h-full object-cover"><div class="overlay"><h3 class="overlay-title">Small Mirror</h3></div></div>
+                    <!-- Product: Staircase Guiderails -->
+                    <div class="gallery-item shadow-lg sm:col-span-2 lg:col-span-1"><img src="https://i.imgur.com/EBTPvVx.jpg" alt="Staircase Guiderails" class="w-full h-full object-cover"><div class="overlay"><h3 class="overlay-title">Staircase Guiderails</h3></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6 text-center max-w-3xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-charcoal">About Eliah</h2>
+                <div class="w-24 h-1 bg-brand-orange mx-auto my-6"></div>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    My name is Eliah, and I specialize in creating high-quality, handcrafted steel furniture designed to elevate any space. From bespoke cabinets to elegant staircase guiderails, my focus is on precision, durability, and modern design. Each piece is built with passion and attention to detail, ensuring it's not just furniture, but a work of art.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-brand-charcoal text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold">Get In Touch</h2>
+                <p class="mt-4 text-lg text-gray-300">Ready to start your project? Let's talk.</p>
+                <div class="mt-12 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
+                    <!-- Phone -->
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-brand-orange mb-2">Phone</h3>
+                        <p class="text-gray-200">Eliah</p>
+                        <a href="tel:0661505770" class="text-lg text-white hover:underline">066 150 5770</a>
+                    </div>
+                    <!-- Email -->
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-brand-orange mb-2">Email</h3>
+                        <p class="text-gray-200">Send your inquiry</p>
+                        <a href="mailto:eliahwelders@gmail.com" class="text-lg text-white hover:underline">eliahwelders@gmail.com</a>
+                    </div>
+                    <!-- Location -->
+                    <div class="text-center">
+                        <h3 class="text-xl font-semibold text-brand-orange mb-2">Location</h3>
+                        <p class="text-lg text-gray-200 leading-snug">24 Xandre Cresent<br>Hagley, Kuils River, 7580<br>Western Cape, South Africa</p>
+                    </div>
+                </div>
+                 <div class="mt-12">
+                     <a href="mailto:eliahwelders@gmail.com?subject=Quote%20Request%20from%20Website" class="bg-brand-orange text-white text-lg font-bold py-4 px-10 rounded-full hover:opacity-90 transition-opacity">
+                         Request a Free Quote
+                     </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <img src="https://i.imgur.com/I5mPPj9.png" alt="ELIAH Professional Welders Logo" class="h-20 w-auto mx-auto mb-4">
+            <p>&copy; <span id="year"></span> ELIAH Professional Welders. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for the mobile menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
